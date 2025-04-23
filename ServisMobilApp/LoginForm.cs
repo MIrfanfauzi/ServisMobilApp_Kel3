@@ -48,7 +48,7 @@ namespace ServisMobilApp
                     }
                     else
                     {
-                        MessageBox.Show("Username, password, atau role salah.", "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Username atau password salah!", "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
