@@ -19,6 +19,7 @@ namespace ServisMobilApp
                 }
                 else
                 {
+                    Application.Exit();
                 }
             }
         }
