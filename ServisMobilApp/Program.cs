@@ -11,15 +11,15 @@ namespace ServisMobilApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            LoginForm loginForm = new LoginForm();
-
-            if (loginForm.ShowDialog() == DialogResult.OK)
+            using (LoginForm loginForm = new LoginForm())
             {
-                Application.Run(new MainForm());
-            }
-            else
-            {
-                Application.Exit();
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new MainForm(loginForm));
+                }
+                else
+                {
+                }
             }
         }
     }

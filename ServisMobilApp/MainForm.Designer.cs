@@ -25,12 +25,14 @@
             this.btnMekanik = new System.Windows.Forms.Button();
             this.btnPelanggan = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panelmenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelmenu
             // 
             this.panelmenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelmenu.Controls.Add(this.btnLogout);
             this.panelmenu.Controls.Add(this.btnLaporanServis);
             this.panelmenu.Controls.Add(this.btnPemesananServis);
             this.panelmenu.Controls.Add(this.btnLayananServis);
@@ -122,6 +124,18 @@
             this.panelContent.Size = new System.Drawing.Size(1026, 921);
             this.panelContent.TabIndex = 1;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(71, 806);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(173, 65);
+            this.btnLogout.TabIndex = 6;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -146,5 +160,6 @@
         private System.Windows.Forms.Button btnMekanik;
         private System.Windows.Forms.Button btnPelanggan;
         private System.Windows.Forms.Panel panelContent;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
